@@ -4,18 +4,20 @@
 }
 .form{
     width: 35vw;
-    height: 20vh;
-    border: 1px solid red;
+    height: 30vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10%;
+    box-sizing: border-box;
     &__form{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         &-label{
             display: flex;
-            
+
             width: 100%;
         }
         &-input{
@@ -24,6 +26,10 @@
         &>button{
             background: none;
             border: none;
+            border: 1px solid black;
+            border-radius: 10%;
+            padding:5px;
+            margin-top: 10px;
         }
     }
     &__result{
@@ -31,4 +37,11 @@
         flex-direction: column;
         align-items: flex-start;
     }
+}
+.darkMode{
+    background-color: black;
+    color: white;
+}
+.emailError{
+    border: red 1px solid;
 }

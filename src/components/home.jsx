@@ -9,15 +9,20 @@ const Home = () => {
 
 const [darkMode, setDarkMode] = useState(false)
 
-const handleDarkMode = () => {
-    setDarkMode(!darkMode)
-}
-    
+
+    const handleDarkMode = (e) => {
+        if(e.target.checked === true){
+            setDarkMode(true)
+        }else{
+            setDarkMode(false)
+        }
+    }
+
     return (
         <div className={`home ${darkMode && 'darkMode'}`}>
-            <Nav handleClick={handleDarkMode}/>
+            <Nav handleDarkMode={handleDarkMode} darkMode={darkMode}/>
             <div className="home__form">
-                <Form/>
+                <Form darkMode={darkMode}/>
             </div>
         </div>
     );

@@ -7,11 +7,21 @@
     position: fixed;
     top: 0;
     right: 0;
-    padding: 10px;
+    padding: 30px;
     box-sizing: border-box;
-    &>div{
-        &>img{
-            width: 30px;
+    &>label{
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &>input{
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
+}
+.darkMode{
+    color: white;
 }

@@ -2,14 +2,14 @@ import React,{useState} from "react";
 import './nav.scss'
 import Cog from '../../assets/icons/cog.svg';
 
-const Nav = ({handleClick}) => {
+const Nav = ({handleDarkMode, darkMode}) => {
 
     return (
         <div className='nav'>
-            <h1>Form Challenge</h1>
+            <h1 className={darkMode &&'darkMode'}>Form Challenge</h1>
             <label className="switch">
                 dark mode
-                <input onClick={handleClick} type="checkbox"/>
+                <input onClick={handleDarkMode} type="checkbox"/>
             </label>
         </div>
     );
