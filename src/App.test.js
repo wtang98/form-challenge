@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Form Challenge on load', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByRole('heading', {name: /form challenge/i});
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('renders Form Challenge on load', () => {
+  render(<App/>);
+  const linkElement = screen.getByRole('heading', {name: /form challenge/i});
   expect(linkElement).toBeInTheDocument();
 });
