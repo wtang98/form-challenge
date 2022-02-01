@@ -23,7 +23,6 @@ const Form = ({darkMode}) => {
             setEmailError(true)
         }
     }
-    // useEffect(handleSumbit, [nameState,emailState])
     
     return (
         <div className={`form ${darkMode && 'darkMode'}`}>
