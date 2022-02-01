@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    border-radius: 10%;
+    border-radius: 15px;
     box-sizing: border-box;
     &__form{
         flex-direction: column;
@@ -22,6 +22,9 @@
         }
         &-input{
             width: 100%;
+        }
+        &-input:focus{
+            outline: none;
         }
         &>button{
             background: none;
@@ -41,6 +44,7 @@
 .darkMode{
     background-color: black;
     color: white;
+    border: white 1px solid;
 }
 .emailError{
     border: red 1px solid;

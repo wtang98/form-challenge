@@ -19,7 +19,7 @@ const [darkMode, setDarkMode] = useState(false)
     }
 
     return (
-        <div className={`home ${darkMode && 'darkMode'}`}>
+        <div className={`home ${darkMode && 'DarkMode'}`}>
             <Nav handleDarkMode={handleDarkMode} darkMode={darkMode}/>
             <div className="home__form">
                 <Form darkMode={darkMode}/>
